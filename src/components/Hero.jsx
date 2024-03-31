@@ -13,9 +13,10 @@ const Hero = () => {
         </button>
       </nav>
       <h1 className="head_text">
-        Summ Articles with <br />
+        Summ Articles with <br className="max=md:hidden" />
         <span className="red_gradient">OpenAi GPT-4</span>
       </h1>
+      <h2 className="desc">Simplify your reading</h2>
     </header>
   );
 };
