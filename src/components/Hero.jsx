@@ -11,6 +11,10 @@ const Hero = () => {
         >
           GitHub{" "}
         </button>
+        <h1 className="head_text">
+          Summ Articles with <br />
+          <span className="red_gradient">OpenAi GPT-4</span>
+        </h1>
       </nav>
     </header>
   );
