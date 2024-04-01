@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { copy, linkIcon, loader, tick } from "../assets";
+import { copy, linkIcon, loader, tick } from "../assets/";
 
 const Demo = () => {
   return (
@@ -23,6 +23,13 @@ const Demo = () => {
           required
           className="url_input peer"
         />
+        <button
+          type="submit"
+          className="submit_bt peer-focus:border-gray-700
+        peer-focus:text-gray-700"
+        >
+          ↵
+        </button>
       </div>
     </section>
   );
