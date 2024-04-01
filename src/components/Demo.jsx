@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { copy, linkIcon, loader, tick } from "../assets/";
+import { linkIcon } from "../assets/";
 
 const Demo = () => {
   return (
