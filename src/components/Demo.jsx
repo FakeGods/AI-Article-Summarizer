@@ -1,14 +1,22 @@
 import { useState, useEffect } from "react";
-import { linkIcon } from "../assets/";
+import { copy, linkIcon, loader, tick } from "../assets";
 
 const Demo = () => {
+  useState[(article, setArticle)] = useState({
+    url: "",
+    summary: "",
+  });
+
+  const handleSubmit = async (e) => {
+    alert("Submitted");
+  };
   return (
     <section className="mt-16 w-full max-w-xl">
       <div className="flex flex-col w-full gap-2">
         <form
           action=""
           className="relative flex justify-center items-center"
-          onSubmit={() => {}}
+          onSubmit={handleSubmit}
         ></form>
         <img
           src="{linkIcon}"

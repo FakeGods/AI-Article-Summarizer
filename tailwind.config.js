@@ -10,9 +10,4 @@ export default {
     },
   },
   plugins: [],
-  server: {
-    fs: {
-      cachedChecks: false
-    }
-  }
 };
