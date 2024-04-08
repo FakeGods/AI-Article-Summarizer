@@ -35,7 +35,7 @@ const Demo = () => {
 
       console.log(newArticle);
     }
-    //Fetch summary
+    localStorage.setItem("articles", JSON.stringify(updatedAllArticles));
   };
   return (
     <section className="mt-16 w-full max-w-xl">
