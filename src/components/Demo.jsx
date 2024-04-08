@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import linkIcon from "../assets/link.svg";
 import { useLazyGetSummaryQuery } from "../services/article";
 
@@ -10,6 +10,16 @@ const Demo = () => {
 
   const [getSummary, { error, isFetching }] = useLazyGetSummaryQuery();
 
+  useEffect(() => {
+    const articlesFromLocalStorage = Json.parse(
+      localStorage.getItem("articles")
+    );
+
+    if (articlesFromLocalStorage) {
+      setAllArticles(articlesFromLocalStorage);
+    }
+  }, []);
+
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -17,8 +27,12 @@ const Demo = () => {
 
     if (data?.summary) {
       const newArticle = { ...article, summary: data.summary };
+      const updatedAllArticles = [newArticle, ...allArticles];
 
       setArticle(newArticle);
+
+      setAllArticles(updatedAllArticles);
+
       console.log(newArticle);
     }
     //Fetch summary
