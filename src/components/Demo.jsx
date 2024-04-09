@@ -1,17 +1,20 @@
 import React, { useEffect, useState } from "react";
 import linkIcon from "../assets/link.svg";
 import { useLazyGetSummaryQuery } from "../services/article";
+import copy from "../assets/copy.svg";
 
 const Demo = () => {
   const [article, setArticle] = useState({
     url: "",
     summary: "",
   });
+  const [allArticles, setAllArticles] = useState([]);
+  const [copied, setCopied] = useState("");
 
   const [getSummary, { error, isFetching }] = useLazyGetSummaryQuery();
 
   useEffect(() => {
-    const articlesFromLocalStorage = Json.parse(
+    const articlesFromLocalStorage = JSON.parse(
       localStorage.getItem("articles")
     );
 
@@ -30,12 +33,9 @@ const Demo = () => {
       const updatedAllArticles = [newArticle, ...allArticles];
 
       setArticle(newArticle);
-
       setAllArticles(updatedAllArticles);
-
-      console.log(newArticle);
+      localStorage.setItem("articles", JSON.stringify(updatedAllArticles));
     }
-    localStorage.setItem("articles", JSON.stringify(updatedAllArticles));
   };
   return (
     <section className="mt-16 w-full max-w-xl">
@@ -66,8 +66,31 @@ const Demo = () => {
           </button>
         </form>
         {/* History */}
+        <div className="flex flex-col gap-1m max-h-60 overflow-y-auto">
+          {allArticles.map((item, index) => (
+            <div
+              key={"link-${index}"}
+              onClick={() => setArticle(item)}
+              className="link_card"
+            >
+              <div className="copy_btn">
+                <img
+                  src={copy}
+                  alt="copy_icon"
+                  className="w-[40%] h-[40%] object-contain"
+                ></img>
+              </div>
+              <p className="flex-1 font-satoshi text-blue-700 font-medium text-sm truncate">
+                {item.url}
+              </p>
+            </div>
+          ))}
+        </div>
       </div>
       {/* Results */}
+      <div className="my-10 max-w-full flex justify-center items-center">
+        {isFetching}
+      </div>
     </section>
   );
 };
