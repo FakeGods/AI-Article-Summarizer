@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import linkIcon from "../assets/link.svg";
 import { useLazyGetSummaryQuery } from "../services/article";
 import copy from "../assets/copy.svg";
+import loader from "../assets/loader.svg";
 
 const Demo = () => {
   const [article, setArticle] = useState({
@@ -106,7 +107,9 @@ const Demo = () => {
                 Article <span className="blue_gradient">Summary</span>
               </h2>
               <div className="summary_box">
-                <p>{article.summary}</p>
+                <p className="font-inter font-medium text-sm text-gray-700">
+                  {article.summary}
+                </p>
               </div>
             </div>
           )
