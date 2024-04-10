@@ -1,0 +1,35 @@
+<svg id='Interface_Arrows_Shrink_1_16' width='16' height='16' viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><rect width='16' height='16' stroke='none' fill='#000000' opacity='0'/>
+
+
+<g transform="matrix(0.86 0 0 0.86 8 8)" >
+<g style="" >
+<g transform="matrix(1 0 0 1 -4.5 4.5)" >
+<line style="stroke: white; stroke-width: 1; stroke-dasharray: none; stroke-linecap: round; stroke-dashoffset: 0; stroke-linejoin: round; stroke-miterlimit: 4; fill: none; fill-rule: nonzero; opacity: 1;" x1="-2" y1="2" x2="2" y2="-2" />
+</g>
+<g transform="matrix(1 0 0 1 -4.25 4.25)" >
+<polyline style="stroke: white; stroke-width: 1; stroke-dasharray: none; stroke-linecap: round; stroke-dashoffset: 0; stroke-linejoin: round; stroke-miterlimit: 4; fill: none; fill-rule: nonzero; opacity: 1;" points="-1.75,-1.75 1.75,-1.75 1.75,1.75 " />
+</g>
+<g transform="matrix(1 0 0 1 4.5 4.5)" >
+<line style="stroke: white; stroke-width: 1; stroke-dasharray: none; stroke-linecap: round; stroke-dashoffset: 0; stroke-linejoin: round; stroke-miterlimit: 4; fill: none; fill-rule: nonzero; opacity: 1;" x1="2" y1="2" x2="-2" y2="-2" />
+</g>
+<g transform="matrix(1 0 0 1 4.25 4.25)" >
+<polyline style="stroke: white; stroke-width: 1; stroke-dasharray: none; stroke-linecap: round; stroke-dashoffset: 0; stroke-linejoin: round; stroke-miterlimit: 4; fill: none; fill-rule: nonzero; opacity: 1;" points="1.75,-1.75 -1.75,-1.75 -1.75,1.75 " />
+</g>
+<g transform="matrix(1 0 0 1 -4.5 -4.5)" >
+<line style="stroke: white; stroke-width: 1; stroke-dasharray: none; stroke-linecap: round; stroke-dashoffset: 0; stroke-linejoin: round; stroke-miterlimit: 4; fill: none; fill-rule: nonzero; opacity: 1;" x1="-2" y1="-2" x2="2" y2="2" />
+</g>
+<g transform="matrix(1 0 0 1 -4.25 -4.25)" >
+<polyline style="stroke: white; stroke-width: 1; stroke-dasharray: none; stroke-linecap: round; stroke-dashoffset: 0; stroke-linejoin: round; stroke-miterlimit: 4; fill: none; fill-rule: nonzero; opacity: 1;" points="-1.75,1.75 1.75,1.75 1.75,-1.75 " />
+</g>
+<g transform="matrix(1 0 0 1 4.5 -4.5)" >
+<line style="stroke: white; stroke-width: 1; stroke-dasharray: none; stroke-linecap: round; stroke-dashoffset: 0; stroke-linejoin: round; stroke-miterlimit: 4; fill: none; fill-rule: nonzero; opacity: 1;" x1="2" y1="-2" x2="-2" y2="2" />
+</g>
+<g transform="matrix(1 0 0 1 4.25 -4.25)" >
+<polyline style="stroke: white; stroke-width: 1; stroke-dasharray: none; stroke-linecap: round; stroke-dashoffset: 0; stroke-linejoin: round; stroke-miterlimit: 4; fill: none; fill-rule: nonzero; opacity: 1;" points="1.75,1.75 -1.75,1.75 -1.75,-1.75 " />
+
+</g>
+</g>
+</g>
+
+</svg>
+
