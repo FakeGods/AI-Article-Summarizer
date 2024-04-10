@@ -10,7 +10,7 @@ const Hero = () => {
       <nav className="flex justify-between items-center w-full mb-10 pt-3">
         <div className="flex justify-between items-center">
           <img src={logo} alt="summi_logo" className="w-10  " />
-          <p className="text-xl text-bold font-bold">SUMMI</p>
+          <p className="text-xl text-bold font-bold">MINIMIZE</p>
         </div>
         <div className="flex justify-between items-center">
           <button
