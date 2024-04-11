@@ -83,7 +83,7 @@
 }
 
 .blue_gradient {
-  @apply font-black bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent;
+  @apply font-black bg-gradient-to-r from-yellow-400 to-amber-600 bg-clip-text text-transparent;
 }
 
 .summary_box {
